@@ -35,6 +35,11 @@ export function Navigation() {
         <div className="flex w-full items-center justify-between py-6">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
+              <img 
+                src="/logo.jpeg" 
+                alt="Men's Walk n Talk Logo" 
+                className="h-12 w-12 mr-3"
+              />
               <span className="text-2xl font-bold text-teal">MWnT</span>
             </Link>
           </div>

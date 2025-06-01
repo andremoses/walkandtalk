@@ -12,6 +12,11 @@ export default function HomePage() {
         </div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
+            <img 
+              src="/logo.jpeg" 
+              alt="Men's Walk n Talk Logo" 
+              className="h-32 w-32 mx-auto mb-6 rounded-full shadow-lg"
+            />
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Men's Walk n Talk
             </h1>

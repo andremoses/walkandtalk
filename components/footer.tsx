@@ -6,7 +6,14 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">MWnT</h3>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/logo.jpeg" 
+                alt="Men's Walk n Talk Logo" 
+                className="h-16 w-16 mr-3"
+              />
+              <h3 className="text-2xl font-bold text-white">MWnT</h3>
+            </div>
             <p className="text-sm text-gray-400">
               Building Connection, Conversation, and Community Through Movement
             </p>
