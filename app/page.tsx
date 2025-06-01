@@ -18,7 +18,7 @@ export default function HomePage() {
               className="h-32 w-32 mx-auto mb-6 rounded-full shadow-lg"
             />
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Men's Walk N Talk CIC
+              Men's Walk N Talk
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90">
               Building Connection, Conversation, and Community Through Movement
