@@ -80,9 +80,19 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-800 pt-8">
-          <p className="text-center text-xs text-gray-400">
-            © {new Date().getFullYear()} Men's Walk n Talk. All rights reserved.
-          </p>
+          <div className="flex flex-col sm:flex-row justify-between items-center">
+            <p className="text-xs text-gray-400 mb-4 sm:mb-0">
+              © {new Date().getFullYear()} Men's Walk n Talk. All rights reserved.
+            </p>
+            <div className="flex space-x-6 text-xs">
+              <Link href="/terms" className="text-gray-400 hover:text-white">
+                Terms & Conditions
+              </Link>
+              <Link href="/privacy" className="text-gray-400 hover:text-white">
+                Privacy Policy
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
