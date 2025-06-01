@@ -1,0 +1,148 @@
+import { Button } from "@/components/ui/button"
+import { Calendar, MapPin, Users, Clock } from "lucide-react"
+
+export default function WalksPage() {
+  return (
+    <div className="py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            Join Our Walks
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600">
+            Connect with our community through regular walks across London. 
+            All walks are free and open to all men who want to join us.
+          </p>
+        </div>
+
+        <div className="mt-16">
+          {/* Upcoming Walk Highlight */}
+          <div className="bg-teal rounded-lg p-8 text-white">
+            <h2 className="text-2xl font-bold mb-4">Next Walk</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Hampstead Heath Walk & Talk</h3>
+                <div className="space-y-2">
+                  <div className="flex items-center">
+                    <Calendar className="h-5 w-5 mr-2" />
+                    <span>Saturday, 10th February 2024</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Clock className="h-5 w-5 mr-2" />
+                    <span>10:00 AM - 12:00 PM</span>
+                  </div>
+                  <div className="flex items-center">
+                    <MapPin className="h-5 w-5 mr-2" />
+                    <span>Meet at Hampstead Heath Station</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Users className="h-5 w-5 mr-2" />
+                    <span>15 spots available</span>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <Button size="lg" variant="yellow">
+                  Register for This Walk
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* Calendar Embed Section */}
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Full Walk Schedule</h2>
+            <div className="bg-gray-100 rounded-lg p-8 text-center">
+              <p className="text-gray-600 mb-4">
+                View our complete calendar of walks and events
+              </p>
+              <Button variant="default" asChild>
+                <a 
+                  href="https://calendar.google.com/calendar/embed?src=menswalkntalk%40gmail.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Calendar className="mr-2 h-4 w-4" />
+                  View Google Calendar
+                </a>
+              </Button>
+              <p className="mt-4 text-sm text-gray-500">
+                Opens in a new window
+              </p>
+            </div>
+          </div>
+
+          {/* Walk Guidelines */}
+          <div className="mt-12 bg-gray-50 rounded-lg p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">What to Expect</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="font-semibold text-lg mb-3">Before the Walk</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start">
+                    <span className="text-teal mr-2">•</span>
+                    <span>Register through our calendar or contact us</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-teal mr-2">•</span>
+                    <span>Wear comfortable walking shoes and weather-appropriate clothing</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-teal mr-2">•</span>
+                    <span>Bring water and any personal items you need</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-lg mb-3">During the Walk</h3>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start">
+                    <span className="text-orange mr-2">•</span>
+                    <span>We walk at a comfortable pace for all fitness levels</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange mr-2">•</span>
+                    <span>Conversations flow naturally - no pressure to share</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-orange mr-2">•</span>
+                    <span>What's shared on the walk stays on the walk</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Cultural Visits */}
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Cultural Visits</h2>
+            <p className="text-lg text-gray-600 mb-6">
+              Beyond our regular walks, we organize visits to museums, galleries, and theatres. 
+              These cultural experiences spark meaningful conversations and help us explore new perspectives together.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <h3 className="font-semibold mb-2">Museums</h3>
+                <p className="text-gray-600 text-sm">
+                  Exploring history and culture to understand our present
+                </p>
+              </div>
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <h3 className="font-semibold mb-2">Galleries</h3>
+                <p className="text-gray-600 text-sm">
+                  Engaging with art to express what words cannot
+                </p>
+              </div>
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <h3 className="font-semibold mb-2">Theatres</h3>
+                <p className="text-gray-600 text-sm">
+                  Experiencing stories that reflect our journeys
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
