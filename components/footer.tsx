@@ -12,8 +12,16 @@ export function Footer() {
                 alt="Men's Walk n Talk Logo" 
                 className="h-16 w-16 mr-3"
               />
-              <h3 className="text-2xl font-bold text-white">MWnT</h3>
+              <h3 className="text-2xl font-bold text-white">Men's Walk N Talk CIC</h3>
             </div>
+            <p className="text-sm text-gray-400 mb-2">
+              CIC: 14514390
+            </p>
+            <p className="text-sm text-gray-400 mb-2">
+              International House, 3Space<br />
+              6 Canterbury Cres<br />
+              London SW9 7QD
+            </p>
             <p className="text-sm text-gray-400">
               Building Connection, Conversation, and Community Through Movement
             </p>

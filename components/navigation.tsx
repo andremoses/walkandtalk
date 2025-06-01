@@ -40,7 +40,7 @@ export function Navigation() {
                 alt="Men's Walk n Talk Logo" 
                 className="h-12 w-12 mr-3"
               />
-              <span className="text-2xl font-bold text-teal">MWnT</span>
+              <span className="text-2xl font-bold text-teal">Men's Walk N Talk CIC</span>
             </Link>
           </div>
           <div className="ml-10 hidden space-x-8 lg:block">
