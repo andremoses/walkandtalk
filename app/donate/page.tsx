@@ -71,7 +71,7 @@ export default function DonatePage() {
                 Every contribution, no matter the size, makes a difference in our community.
               </p>
               <p className="text-sm text-gray-500">
-                MWnT is a grassroots initiative. Your donations go directly to supporting our walks and programs.
+                Men's Walk n Talk is a grassroots initiative. Your donations go directly to supporting our walks and programs.
               </p>
             </div>
 

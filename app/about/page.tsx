@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function AboutPage() {
   return (
@@ -19,7 +20,7 @@ export default function AboutPage() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900">Who We Are</h2>
             <p className="mt-4 text-lg text-gray-600">
-              Men's Walk n Talk (MWnT) is a grassroots community initiative created to support 
+              Men's Walk n Talk is a grassroots community initiative created to support 
               men—especially those from Afro-Caribbean backgrounds—by providing a safe, inclusive 
               space to connect, share, and grow. We are a welcoming and diverse group of straight 
               and queer men who come together through shared experiences, meaningful discussions, 
@@ -27,10 +28,19 @@ export default function AboutPage() {
             </p>
           </section>
 
+          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl my-12">
+            <Image
+              src="/pics/WhatsApp Image 2025-06-27 at 20.46.25 (2).jpeg"
+              alt="Men's Walk n Talk group walking together"
+              fill
+              className="object-cover"
+            />
+          </div>
+
           <section>
             <h2 className="text-2xl font-bold text-gray-900">What We Do</h2>
             <p className="mt-4 text-lg text-gray-600">
-              At MWnT, we use group walks across London as a tool to encourage conversation, 
+              At Men's Walk n Talk, we use group walks across London as a tool to encourage conversation, 
               support mental and physical health, and reduce isolation. Our walks are more than 
               just exercise—they are opportunities to build friendships, share stories, and 
               reflect on personal and community experiences.
@@ -42,6 +52,15 @@ export default function AboutPage() {
               masculinity, health, and the challenges faced by men today.
             </p>
           </section>
+
+          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl my-12">
+            <Image
+              src="/pics/WhatsApp Image 2025-06-27 at 20.46.26 (1).jpeg"
+              alt="Cultural visit at a museum"
+              fill
+              className="object-cover"
+            />
+          </div>
 
           <section>
             <h2 className="text-2xl font-bold text-gray-900">Our Mission</h2>
@@ -67,7 +86,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
               <div className="text-center">
                 <h3 className="font-semibold text-lg mb-2">Our Team</h3>
-                <p className="text-gray-600 mb-4">Meet the people behind MWnT</p>
+                <p className="text-gray-600 mb-4">Meet the people behind Men's Walk n Talk</p>
                 <Button variant="outline" asChild>
                   <Link href="/about/team">View Team</Link>
                 </Button>

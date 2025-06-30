@@ -7,7 +7,7 @@ const blogPosts = [
     title: "The Power of Walking Together",
     excerpt: "Exploring how group walks can transform mental health and build lasting friendships among men.",
     date: "2024-01-15",
-    author: "MWnT Team",
+    author: "Men's Walk n Talk Team",
     category: "Mental Health",
   },
   {
@@ -15,7 +15,7 @@ const blogPosts = [
     title: "Breaking Down Barriers: Men and Vulnerability",
     excerpt: "Why creating safe spaces for men to express emotions is crucial for community wellbeing.",
     date: "2024-01-08",
-    author: "MWnT Team",
+    author: "Men's Walk n Talk Team",
     category: "Community",
   },
   {
@@ -23,7 +23,7 @@ const blogPosts = [
     title: "Cultural Spaces and Community Connection",
     excerpt: "How visiting museums and galleries opens up new conversations and perspectives.",
     date: "2023-12-20",
-    author: "MWnT Team",
+    author: "Men's Walk n Talk Team",
     category: "Culture",
   },
 ]

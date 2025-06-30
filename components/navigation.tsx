@@ -28,6 +28,20 @@ export function Navigation() {
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
   const [aboutDropdownOpen, setAboutDropdownOpen] = React.useState(false)
+  const dropdownTimeoutRef = React.useRef<NodeJS.Timeout | null>(null)
+
+  const handleMouseEnter = () => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current)
+    }
+    setAboutDropdownOpen(true)
+  }
+
+  const handleMouseLeave = () => {
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setAboutDropdownOpen(false)
+    }, 200) // 200ms delay before closing
+  }
 
   return (
     <header className="bg-white shadow-sm">
@@ -40,37 +54,46 @@ export function Navigation() {
                 alt="Men's Walk n Talk Logo" 
                 className="h-12 w-12 mr-3"
               />
-              <span className="text-2xl font-bold text-teal">Men's Walk N Talk</span>
+              <span className="text-2xl font-bold text-teal">Men's Walk n Talk</span>
             </Link>
           </div>
           <div className="ml-10 hidden space-x-8 lg:block">
             {navigation.map((item) => (
               <div key={item.name} className="relative inline-block">
                 {item.subItems ? (
-                  <div className="relative">
-                    <button
+                  <div 
+                    className="relative"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <Link
+                      href={item.href}
                       className={cn(
-                        "text-base font-medium hover:text-teal",
+                        "text-base font-medium hover:text-teal pb-2",
                         pathname.startsWith(item.href)
                           ? "text-teal"
                           : "text-gray-700"
                       )}
-                      onClick={() => setAboutDropdownOpen(!aboutDropdownOpen)}
                     >
                       {item.name}
-                    </button>
+                    </Link>
                     {aboutDropdownOpen && (
-                      <div className="absolute left-0 z-10 mt-2 w-48 origin-top-left rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5">
+                      <div 
+                        className="absolute left-0 z-10 mt-0 pt-2 w-48"
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                      >
+                        <div className="origin-top-left rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5">
                         {item.subItems.map((subItem) => (
                           <Link
                             key={subItem.name}
                             href={subItem.href}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            onClick={() => setAboutDropdownOpen(false)}
                           >
                             {subItem.name}
                           </Link>
                         ))}
+                        </div>
                       </div>
                     )}
                   </div>
@@ -123,9 +146,13 @@ export function Navigation() {
               <div key={item.name}>
                 {item.subItems ? (
                   <>
-                    <div className="block rounded-md px-3 py-2 text-base font-medium text-gray-700">
+                    <Link
+                      href={item.href}
+                      className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-teal"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
                       {item.name}
-                    </div>
+                    </Link>
                     {item.subItems.map((subItem) => (
                       <Link
                         key={subItem.name}

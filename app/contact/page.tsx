@@ -49,7 +49,7 @@ export default function ContactPage() {
                 <Mail className="h-6 w-6 text-teal mr-3 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-gray-600">menswalkntalk@gmail.com</p>
+                  <p className="text-gray-600">Menswalkntalkoutreach@outlook.com</p>
                 </div>
               </div>
               
@@ -76,7 +76,7 @@ export default function ContactPage() {
             <div className="mt-8 p-6 bg-teal/10 rounded-lg">
               <h3 className="font-semibold text-gray-900 mb-2">Join Our Next Walk</h3>
               <p className="text-gray-600 mb-4">
-                The best way to learn about MWnT is to join us for a walk. 
+                The best way to learn about Men's Walk n Talk is to join us for a walk. 
                 Check our calendar and register for an upcoming event.
               </p>
               <Button variant="default" asChild>

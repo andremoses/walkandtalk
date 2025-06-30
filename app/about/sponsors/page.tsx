@@ -45,7 +45,7 @@ export default function SponsorsPage() {
         <div className="mt-16">
           <div className="bg-gray-50 rounded-lg p-12 text-center">
             <p className="text-lg text-gray-600 mb-8">
-              MWnT is grateful for the support of our funders who make it possible for us to provide free walks 
+              Men's Walk n Talk is grateful for the support of our funders who make it possible for us to provide free walks 
               and programs for men across London. Their funding directly enables us to create safe spaces 
               for men to connect, share, and support each other through life's challenges.
             </p>
@@ -58,30 +58,6 @@ export default function SponsorsPage() {
                 Your funding transforms lives by enabling us to offer free mental health support through walking groups, 
                 cultural activities, and community building. Every contribution helps us reach more men who need connection and support.
               </p>
-            </div>
-          </div>
-
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <h3 className="font-semibold text-lg mb-2">Walk Funder</h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Support our regular community walks
-              </p>
-              <p className="text-2xl font-bold text-teal">From £500</p>
-            </div>
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <h3 className="font-semibold text-lg mb-2">Cultural Visit Funder</h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Fund museum and gallery experiences
-              </p>
-              <p className="text-2xl font-bold text-orange">From £1,000</p>
-            </div>
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <h3 className="font-semibold text-lg mb-2">Annual Funding Partner</h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Year-round support for all programs
-              </p>
-              <p className="text-2xl font-bold text-yellow-dark">From £5,000</p>
             </div>
           </div>
 

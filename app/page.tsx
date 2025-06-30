@@ -1,14 +1,22 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Users, Heart, MessageCircle, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-teal to-teal-dark py-24">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.4)_100%)]" />
+      <section className="relative overflow-hidden py-24">
+        <div className="absolute inset-0">
+          <Image
+            src="/pics/WhatsApp Image 2025-06-27 at 20.46.26.jpeg"
+            alt="Men walking together"
+            fill
+            className="object-cover object-[center_40%]"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-teal/80 to-teal-dark/80" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -18,7 +26,7 @@ export default function HomePage() {
               className="h-32 w-32 mx-auto mb-6 rounded-full shadow-lg"
             />
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Men's Walk N Talk
+              Men's Walk n Talk
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90">
               Building Connection, Conversation, and Community Through Movement
@@ -120,19 +128,29 @@ export default function HomePage() {
       {/* Who We Serve */}
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Who We Serve
-            </h2>
-            <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-600">
-              MWnT is a welcoming and diverse group of straight and queer men—especially those from 
-              Afro-Caribbean backgrounds—who come together through shared experiences, meaningful 
-              discussions, and cultural exploration.
-            </p>
-            <div className="mt-8">
-              <Button variant="default" asChild>
-                <Link href="/about">Learn About Our Story</Link>
-              </Button>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Who We Serve
+              </h2>
+              <p className="mt-4 text-lg text-gray-600">
+                Men's Walk n Talk is a welcoming and diverse group of straight and queer men—especially those from 
+                Afro-Caribbean backgrounds—who come together through shared experiences, meaningful 
+                discussions, and cultural exploration.
+              </p>
+              <div className="mt-8">
+                <Button variant="default" asChild>
+                  <Link href="/about">Learn About Our Story</Link>
+                </Button>
+              </div>
+            </div>
+            <div className="relative h-96 lg:h-full rounded-lg overflow-hidden shadow-xl">
+              <Image
+                src="/pics/WhatsApp Image 2025-06-27 at 20.46.25 (1).jpeg"
+                alt="Men's Walk n Talk community members"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

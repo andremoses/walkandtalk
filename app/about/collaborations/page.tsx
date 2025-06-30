@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function CollaborationsPage() {
   return (
@@ -12,6 +13,38 @@ export default function CollaborationsPage() {
           <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600">
             Working together with organizations that share our vision for community wellbeing.
           </p>
+        </div>
+
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">
+            Our Partner Organizations
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="relative h-32 bg-white rounded-lg shadow-sm p-6">
+              <Image
+                src="/colabs/ENO_Logo.avif"
+                alt="ENO Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="relative h-32 bg-white rounded-lg shadow-sm p-6">
+              <Image
+                src="/colabs/North_Tate_001_Logo.avif"
+                alt="Tate Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="relative h-32 bg-white rounded-lg shadow-sm p-6">
+              <Image
+                src="/colabs/Victoria_and_Albert_Museum_Logo.svg.png"
+                alt="Victoria and Albert Museum Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="mt-16 space-y-12">

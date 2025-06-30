@@ -1,19 +1,36 @@
+import Image from "next/image"
+
 export default function TeamPage() {
   const teamMembers = [
     {
-      name: "Founder 1",
-      role: "Co-Founder",
+      name: "Chakka Shombe",
+      role: "Founder, CEO and Director",
       bio: "Passionate about creating safe spaces for men to connect and grow.",
+      image: "/bios/ChakkaShombe .jpeg"
     },
     {
-      name: "Founder 2",
-      role: "Co-Founder",
-      bio: "Dedicated to breaking down barriers around men's mental health.",
+      name: "Paula Bryan",
+      role: "Co-founder, Director and Wellbeing Officer",
+      bio: "Supporting the mission to create inclusive spaces for men's wellbeing.",
+      image: "/bios/Paula Bryan.jpeg"
     },
     {
-      name: "Walk Leader",
-      role: "Community Organizer",
+      name: "Dirg Aaad Richard",
+      role: "Director and Safeguarding Officer",
       bio: "Facilitates walks and ensures everyone feels welcome and heard.",
+      image: "/bios/Dirg Aaad Richard.jpeg"
+    },
+    {
+      name: "Tony Harrison",
+      role: "Director and Communication Officer",
+      bio: "Committed to fostering meaningful connections through walking and conversation.",
+      image: "/bios/Tony Harrison .jpeg"
+    },
+    {
+      name: "OriShemma Shombe",
+      role: "Senior Administrator",
+      bio: "Dedicated to breaking down barriers around men's mental health.",
+      image: "/bios/OriShemma Shombe .jpeg"
     },
   ]
 
@@ -32,14 +49,16 @@ export default function TeamPage() {
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-8 text-center">
-              <div className="mx-auto h-32 w-32 rounded-full bg-teal flex items-center justify-center mb-6">
-                <span className="text-4xl font-bold text-white">
-                  {member.name.charAt(0)}
-                </span>
+              <div className="mx-auto h-32 w-32 rounded-full overflow-hidden mb-6 relative">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover"
+                />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
               <p className="text-teal font-medium">{member.role}</p>
-              <p className="mt-4 text-gray-600">{member.bio}</p>
             </div>
           ))}
         </div>

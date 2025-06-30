@@ -13,7 +13,7 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
           <p className="mb-4">
-            By participating in Men's Walk N Talk CIC activities, you agree to be bound by these Terms and Conditions.
+            By participating in Men's Walk n Talk CIC activities, you agree to be bound by these Terms and Conditions.
           </p>
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Participation</h2>
@@ -42,13 +42,13 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">6. Donations</h2>
           <p className="mb-4">
-            All donations are voluntary and support our community activities. Men's Walk N Talk CIC is a Community 
+            All donations are voluntary and support our community activities. Men's Walk n Talk CIC is a Community 
             Interest Company (CIC: 14514390).
           </p>
 
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">7. Contact</h2>
           <p className="mb-4">
-            For questions about these terms, please contact us at menswalkntalk@gmail.com
+            For questions about these terms, please contact us at Menswalkntalkoutreach@outlook.com
           </p>
         </div>
       </div>

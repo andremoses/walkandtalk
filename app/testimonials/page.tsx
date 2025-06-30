@@ -5,7 +5,7 @@ const testimonials = [
   {
     id: 1,
     name: "David M.",
-    quote: "MWnT gave me a space to be myself without judgment. The walks helped me process difficult emotions and connect with men who understood my journey.",
+    quote: "Men's Walk n Talk gave me a space to be myself without judgment. The walks helped me process difficult emotions and connect with men who understood my journey.",
     role: "Member since 2023",
   },
   {
@@ -23,7 +23,7 @@ const testimonials = [
   {
     id: 4,
     name: "Samuel A.",
-    quote: "As a young Black man, finding a space where I could talk openly about mental health was life-changing. MWnT helped me heal relationships with my family.",
+    quote: "As a young Black man, finding a space where I could talk openly about mental health was life-changing. Men's Walk n Talk helped me heal relationships with my family.",
     role: "Member since 2022",
   },
   {
@@ -35,7 +35,7 @@ const testimonials = [
   {
     id: 6,
     name: "Anthony L.",
-    quote: "I came for the exercise but stayed for the brotherhood. MWnT showed me that asking for help is courageous, not weak.",
+    quote: "I came for the exercise but stayed for the brotherhood. Men's Walk n Talk showed me that asking for help is courageous, not weak.",
     role: "Member since 2021",
   },
 ]
@@ -49,7 +49,7 @@ export default function TestimonialsPage() {
             Stories from Our Community
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600">
-            Real experiences from men who have found connection, healing, and growth through MWnT.
+            Real experiences from men who have found connection, healing, and growth through Men's Walk n Talk.
           </p>
         </div>
 
@@ -83,7 +83,7 @@ export default function TestimonialsPage() {
           <h2 className="text-2xl font-bold mb-4">Share Your Story</h2>
           <p className="mb-6 max-w-2xl mx-auto">
             Your experience could inspire another man to take the first step. 
-            We'd love to hear how MWnT has impacted your life.
+            We'd love to hear how Men's Walk n Talk has impacted your life.
           </p>
           <Button variant="yellow" size="lg" asChild>
             <Link href="/contact">Get in Touch</Link>

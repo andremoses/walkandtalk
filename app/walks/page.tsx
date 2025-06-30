@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Calendar, MapPin, Users, Clock } from "lucide-react"
+import Image from "next/image"
 
 export default function WalksPage() {
   return (
@@ -16,6 +17,15 @@ export default function WalksPage() {
         </div>
 
         <div className="mt-16">
+          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl mb-12">
+            <Image
+              src="/pics/WhatsApp Image 2025-06-27 at 20.46.26 (1).jpeg"
+              alt="Previous walk in London"
+              fill
+              className="object-cover object-[center_40%]"
+            />
+          </div>
+
           {/* Upcoming Walk Highlight */}
           <div className="bg-teal rounded-lg p-8 text-white">
             <h2 className="text-2xl font-bold mb-4">Next Walk</h2>

@@ -64,7 +64,7 @@ export default function PrivacyPage() {
             For privacy-related questions or to exercise your rights, contact us at:
           </p>
           <p className="mb-4">
-            Email: menswalkntalk@gmail.com<br />
+            Email: Menswalkntalkoutreach@outlook.com<br />
             Address: International House, 3Space, 6 Canterbury Cres, London SW9 7QD
           </p>
 
