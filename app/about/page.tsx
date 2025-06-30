@@ -58,7 +58,7 @@ export default function AboutPage() {
               src="/pics/WhatsApp Image 2025-06-27 at 20.46.26 (1).jpeg"
               alt="Cultural visit at a museum"
               fill
-              className="object-cover"
+              className="object-cover object-[center_40%]"
             />
           </div>
 

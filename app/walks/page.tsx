@@ -151,6 +151,70 @@ export default function WalksPage() {
               </div>
             </div>
           </div>
+
+          {/* Previous Walks */}
+          <div className="mt-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Previous Walks 2025</h2>
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="border-l-4 border-teal pl-4">
+                  <h3 className="font-semibold text-lg text-teal mb-2">February</h3>
+                  <ul className="space-y-2 text-gray-600">
+                    <li><span className="font-medium">9th:</span> Tate Britain</li>
+                    <li><span className="font-medium">23rd:</span> Tate Modern</li>
+                  </ul>
+                </div>
+                
+                <div className="border-l-4 border-orange pl-4">
+                  <h3 className="font-semibold text-lg text-orange mb-2">March</h3>
+                  <ul className="space-y-2 text-gray-600">
+                    <li><span className="font-medium">9th:</span> Hyde Park</li>
+                    <li><span className="font-medium">10th:</span> Evening Walk to Tate</li>
+                    <li><span className="font-medium">14th:</span> Evening Walk to Theatre - Retrograde</li>
+                    <li><span className="font-medium">18th:</span> Evening Walk to Theatre - Punch</li>
+                    <li><span className="font-medium">23rd:</span> Green Park</li>
+                  </ul>
+                </div>
+
+                <div className="border-l-4 border-yellow-dark pl-4">
+                  <h3 className="font-semibold text-lg text-yellow-dark mb-2">April</h3>
+                  <ul className="space-y-2 text-gray-600">
+                    <li><span className="font-medium">6th:</span> Epping Forest with tour guide</li>
+                    <li><span className="font-medium">20th:</span> Regent's Park</li>
+                    <li><span className="font-medium">23rd:</span> Nuffield Swimming Lessons</li>
+                    <li><span className="font-medium">25th:</span> BBC Sounds Interview with Edward Adoo</li>
+                  </ul>
+                </div>
+
+                <div className="border-l-4 border-teal pl-4">
+                  <h3 className="font-semibold text-lg text-teal mb-2">May</h3>
+                  <ul className="space-y-2 text-gray-600">
+                    <li><span className="font-medium">3rd-4th:</span> Mental Health First Aid Training</li>
+                    <li><span className="font-medium">6th:</span> The Secret Lives of Baba Segi's Wives</li>
+                    <li><span className="font-medium">11th:</span> Walk to Cinema - Sinners West Norwood</li>
+                    <li><span className="font-medium">19th:</span> Walk Ubele</li>
+                  </ul>
+                </div>
+
+                <div className="border-l-4 border-orange pl-4">
+                  <h3 className="font-semibold text-lg text-orange mb-2">June</h3>
+                  <ul className="space-y-2 text-gray-600">
+                    <li><span className="font-medium">1st:</span> Greenwich PT 1 - Painted Hall</li>
+                    <li><span className="font-medium">11th:</span> Lyric Theatre - Hadestown</li>
+                    <li><span className="font-medium">15th:</span> Royal Botanic Gardens</li>
+                    <li><span className="font-medium">17th:</span> Arcola Theatre/ 54-60 Africa</li>
+                    <li><span className="font-medium">29th:</span> Darwin Walk</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="mt-6 pt-4 border-t border-gray-200">
+                <p className="text-sm text-gray-500 text-center">
+                  Join us for our upcoming walks and activities.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
