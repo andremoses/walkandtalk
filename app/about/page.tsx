@@ -80,10 +80,10 @@ export default function AboutPage() {
                 </Button>
               </div>
               <div className="text-center">
-                <h3 className="font-semibold text-lg mb-2">Our Sponsors</h3>
+                <h3 className="font-semibold text-lg mb-2">Our Funders</h3>
                 <p className="text-gray-600 mb-4">See who supports our mission</p>
                 <Button variant="outline" asChild>
-                  <Link href="/about/sponsors">View Sponsors</Link>
+                  <Link href="/about/sponsors">View Funders</Link>
                 </Button>
               </div>
             </div>

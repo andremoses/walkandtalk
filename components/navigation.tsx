@@ -15,7 +15,7 @@ const navigation = [
     subItems: [
       { name: "Our Team", href: "/about/team" },
       { name: "Collaborations", href: "/about/collaborations" },
-      { name: "Our Sponsors", href: "/about/sponsors" },
+      { name: "Our Funders", href: "/about/sponsors" },
     ],
   },
   { name: "Blog", href: "/blog" },
