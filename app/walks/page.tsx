@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button"
-import { Calendar, MapPin, Users, Clock } from "lucide-react"
 import Image from "next/image"
 
 export default function WalksPage() {
@@ -26,59 +24,18 @@ export default function WalksPage() {
             />
           </div>
 
-          {/* Upcoming Walk Highlight */}
-          <div className="bg-teal rounded-lg p-8 text-white">
-            <h2 className="text-2xl font-bold mb-4">Next Walk</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="text-xl font-semibold mb-3">Hampstead Heath Walk & Talk</h3>
-                <div className="space-y-2">
-                  <div className="flex items-center">
-                    <Calendar className="h-5 w-5 mr-2" />
-                    <span>Saturday, 10th February 2024</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Clock className="h-5 w-5 mr-2" />
-                    <span>10:00 AM - 12:00 PM</span>
-                  </div>
-                  <div className="flex items-center">
-                    <MapPin className="h-5 w-5 mr-2" />
-                    <span>Meet at Hampstead Heath Station</span>
-                  </div>
-                  <div className="flex items-center">
-                    <Users className="h-5 w-5 mr-2" />
-                    <span>15 spots available</span>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center">
-                <Button size="lg" variant="yellow">
-                  Register for This Walk
-                </Button>
-              </div>
-            </div>
-          </div>
-
           {/* Calendar Embed Section */}
           <div className="mt-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Full Walk Schedule</h2>
-            <div className="bg-gray-100 rounded-lg p-8 text-center">
-              <p className="text-gray-600 mb-4">
-                View our complete calendar of walks and events
-              </p>
-              <Button variant="default" asChild>
-                <a 
-                  href="https://calendar.google.com/calendar/embed?src=menswalkntalk%40gmail.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <Calendar className="mr-2 h-4 w-4" />
-                  View Google Calendar
-                </a>
-              </Button>
-              <p className="mt-4 text-sm text-gray-500">
-                Opens in a new window
-              </p>
+            <div className="bg-gray-100 rounded-lg p-4">
+              <iframe 
+                src="https://calendar.google.com/calendar/embed?src=d345a6b22dfe9b70ebfdc49056ed0be3c2d1de64d77fec9ae75996c5705edb12%40group.calendar.google.com&ctz=Europe%2FLondon"
+                style={{ border: 0 }}
+                width="100%"
+                height="600"
+                title="Men's Walk n Talk Calendar"
+                className="rounded-lg"
+              ></iframe>
             </div>
           </div>
 
