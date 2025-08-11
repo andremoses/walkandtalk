@@ -21,13 +21,11 @@ export default function SponsorsPage() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
             {[
-              { src: "/funders/0261A33D-2482-4340-AE85-AD89FD3B3F93.jpeg", alt: "Funder 1" },
               { src: "/funders/1B342870-0877-4EBD-8471-89D63BC3C46E.jpeg", alt: "Funder 2" },
               { src: "/funders/1B75218A-36BB-4E90-BB1A-EC4BA251A8DC_1_201_a.jpeg", alt: "Funder 3" },
               { src: "/funders/36656990-459C-4E2A-9A50-809AC3067B57_4_5005_c.jpeg", alt: "Funder 4" },
               { src: "/funders/40B4AB13-AD03-4999-A85F-567D59D7BC0E_1_102_o.jpeg", alt: "Funder 5" },
               { src: "/funders/4B9385BC-F9B2-4436-924F-C79E72B720BD_1_102_o.jpeg", alt: "Funder 6" },
-              { src: "/funders/DECF0FA9-D14C-45BB-8A0C-E257CC259D8F.jpeg", alt: "Funder 7" },
               { src: "/funders/FB6324E1-6E00-4122-9F4D-627D23FF9980.png", alt: "Funder 8" }
             ].map((funder, index) => (
               <div key={index} className="relative h-24 bg-white rounded-lg shadow-sm p-4">

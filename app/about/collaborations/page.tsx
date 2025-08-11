@@ -19,7 +19,7 @@ export default function CollaborationsPage() {
           <h2 className="text-2xl font-bold text-center text-gray-900 mb-8">
             Our Partner Organizations
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
             <div className="relative h-32 bg-white rounded-lg shadow-sm p-6">
               <Image
                 src="/colabs/ENO_Logo.avif"
@@ -40,6 +40,62 @@ export default function CollaborationsPage() {
               <Image
                 src="/colabs/Victoria_and_Albert_Museum_Logo.svg.png"
                 alt="Victoria and Albert Museum Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="relative h-32 bg-white rounded-lg shadow-sm p-6">
+              <Image
+                src="/funders/0261A33D-2482-4340-AE85-AD89FD3B3F93.jpeg"
+                alt="Nuffield Health"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="relative h-32 bg-white rounded-lg shadow-sm p-6">
+              <Image
+                src="/funders/DECF0FA9-D14C-45BB-8A0C-E257CC259D8F.jpeg"
+                alt="Healthy Living Platform"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="relative h-32 bg-white rounded-lg shadow-sm p-6">
+              <Image
+                src="/colabs/new/FUJ-logo-boxed.png"
+                alt="FUJ Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="relative h-32 bg-white rounded-lg shadow-sm p-6">
+              <Image
+                src="/colabs/new/News_Article__2.jpg"
+                alt="News Article"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="relative h-32 bg-white rounded-lg shadow-sm p-6">
+              <Image
+                src="/colabs/new/WhatsApp Image 2025-07-04 at 22.03.30.jpeg"
+                alt="WhatsApp Image"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="relative h-32 bg-white rounded-lg shadow-sm p-6">
+              <Image
+                src="/colabs/new/epping-forest-schools.png"
+                alt="Epping Forest Schools"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="relative h-32 bg-white rounded-lg shadow-sm p-6">
+              <Image
+                src="/colabs/new/surrey.webp"
+                alt="Surrey"
                 fill
                 className="object-contain"
               />
