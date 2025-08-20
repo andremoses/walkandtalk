@@ -182,7 +182,7 @@ export function Navigation() {
                 </a>
               </Button>
               <Button variant="orange" className="w-full" asChild>
-                <Link href="/donate">Donate</Link>
+                <a href="https://www.paypal.com/donate?hosted_button_id=4XAU64VVVMLVJ" target="_blank" rel="noopener noreferrer">Donate</a>
               </Button>
             </div>
           </div>

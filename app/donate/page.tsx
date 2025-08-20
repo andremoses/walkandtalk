@@ -76,17 +76,10 @@ export default function DonatePage() {
             </div>
 
             <div className="grid gap-4 mb-8">
-              <Button size="lg" className="w-full" variant="default">
-                Donate £10
-              </Button>
-              <Button size="lg" className="w-full" variant="default">
-                Donate £25
-              </Button>
-              <Button size="lg" className="w-full" variant="default">
-                Donate £50
-              </Button>
-              <Button size="lg" className="w-full" variant="orange">
-                Custom Amount
+              <Button size="lg" className="w-full" variant="orange" asChild>
+                <a href="https://www.paypal.com/donate?hosted_button_id=4XAU64VVVMLVJ" target="_blank" rel="noopener noreferrer">
+                  Donate with PayPal
+                </a>
               </Button>
             </div>
 
